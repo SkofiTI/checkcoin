@@ -1,0 +1,88 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    background: linear-gradient(0deg,#0c0032 30%,#190061 70%);
+    font-family: Chivo-Regular;
+}
+
+a {
+    text-decoration: none;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: sans-serif;
+    margin: 0 auto;
+    max-width: 60rem;
+}
+
+.navbar p {
+    color: #f3f3f3;
+    font-size: 1.75rem;
+    font-weight: 700;
+}
+
+.navbar ul {
+    display: flex;
+    gap: 3rem;
+    list-style: none;
+}
+
+.navbar ul a {
+    background: none;
+    color: #f3f3f3;
+    font-size: 1.3rem;
+    font-weight: 700;
+}
+
+.navbar ul a:hover {
+    background: linear-gradient(20deg,#1a26ce 5%,#be40dd 95%);
+    background-clip: text;
+    color: transparent;
+}
+
+.content {
+    position: relative;
+    margin: 0 auto;
+    max-width: 60rem;
+}
+
+.content img {
+    position: absolute;
+    animation: updown 3s ease-in-out infinite;
+}
+
+#bitcoin-image {
+    top: 20%;
+    right: 90%;
+}
+
+#tether-image {
+    color: white;
+    top: 20%;
+    left: 95%;
+}
+
+.content p {
+    text-align: center;
+    color: #f3f3f3;
+    font-size: 5rem;
+    font-weight: 700;
+}
+
+@keyframes updown {
+    0% {
+      transform: translateY(-40%) rotate(15deg);
+    }
+  
+    50% {
+      transform: translateY(40%) rotate(-15deg);
+    }
+  
+    100% {
+      transform: translateY(-40%) rotate(15deg);
+    }
+}
