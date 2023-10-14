@@ -3,6 +3,7 @@ html, body {
     padding: 0;
     height: 100%;
     background: linear-gradient(0deg,#0c0032 30%,#190061 70%);
+    background-attachment: fixed;
     font-family: Chivo-Regular;
 }
 
@@ -40,49 +41,67 @@ a {
 
 .navbar ul a:hover {
     background: linear-gradient(20deg,#1a26ce 5%,#be40dd 95%);
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -ms-background-clip: text;
     background-clip: text;
     color: transparent;
 }
 
 .content {
     position: relative;
-    margin: 0 auto;
+    margin: 8rem auto;
     max-width: 60rem;
 }
 
-.content img {
-    position: absolute;
-    animation: updown 3s ease-in-out infinite;
-}
-
-#bitcoin-image {
-    top: 20%;
-    right: 90%;
-}
-
-#tether-image {
-    color: white;
-    top: 20%;
-    left: 95%;
-}
-
-.content p {
+.main-content p {
     text-align: center;
     color: #f3f3f3;
     font-size: 5rem;
     font-weight: 700;
 }
 
+.main-content img {
+    position: absolute;
+    animation: updown 3s ease-in-out infinite;
+}
+
+#bitcoin-image {
+    top: 5%;
+    right: 100%;
+}
+
+#tether-image {
+    top: 5%;
+    left: 100%;
+}
+
+.base-currency {
+    margin-top: 10rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.base-currency__item {
+    text-align: center;
+    color: #f3f3f3;
+    font-weight: 700;
+    font-size: 1.25rem;
+    line-height: 0.5rem;
+}
+
+
 @keyframes updown {
     0% {
-      transform: translateY(-40%) rotate(15deg);
+      transform: translateY(-20%) rotate(15deg);
     }
   
     50% {
-      transform: translateY(40%) rotate(-15deg);
+      transform: translateY(20%) rotate(-15deg);
     }
   
     100% {
-      transform: translateY(-40%) rotate(15deg);
+      transform: translateY(-20%) rotate(15deg);
     }
 }
