@@ -11,7 +11,7 @@ a {
     text-decoration: none;
 }
 
-.navbar {
+nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -20,32 +20,39 @@ a {
     max-width: 60rem;
 }
 
-.navbar p {
+nav p {
     color: #f3f3f3;
     font-size: 1.75rem;
     font-weight: 700;
 }
 
-.navbar ul {
+nav ul {
     display: flex;
     gap: 3rem;
     list-style: none;
 }
 
-.navbar ul a {
+nav ul a {
     background: none;
     color: #f3f3f3;
     font-size: 1.3rem;
     font-weight: 700;
 }
 
-.navbar ul a:hover {
+nav ul a:hover {
     background: linear-gradient(20deg,#1a26ce 5%,#be40dd 95%);
     -webkit-background-clip: text;
     -moz-background-clip: text;
     -ms-background-clip: text;
     background-clip: text;
     color: transparent;
+}
+
+.up-price {
+    color: #16c784;
+}
+.down-price {
+    color: #ea3943;
 }
 
 .content {
@@ -91,6 +98,77 @@ a {
     line-height: 0.5rem;
 }
 
+.table-currency {
+    margin-top: 5rem;
+    width: 100%;
+    border-collapse: collapse;
+    color: #f3f3f3;
+    font-size: 1.25rem;
+    text-align: end;
+}
+
+.table-currency #cryptocurrency {
+    margin-bottom: 2rem;
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+.table-currency .table-image {
+    text-align: center;
+}
+
+.table-currency .table-image img {
+    max-width: 3.5rem;
+    height: auto;
+}
+
+.table-currency th, td {
+    padding: 1rem 0;
+}
+
+.table-currency td {
+    border-bottom: 1px solid grey;
+}
+
+.table-currency td:nth-child(5) {
+    width: 30%;
+}
+
+.pagination{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px 0;
+}
+  
+.pagination ul{
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+  
+.pagination li{
+    display: inline-block;
+    margin: 1rem;
+    width: 2.5rem;
+    height: 2.5rem;
+    font-weight: 700;
+    font-size: 1.5rem;
+}
+
+.pagination a {
+    padding: 0.75rem 1.25rem;
+    color: #f3f3f3;
+}
+
+.pagination a.is-active {
+    background: linear-gradient(20deg,#1a26ce 5%,#be40dd 95%);
+    border-radius: 100%;
+}
+
+.pagination a:not(.is-active):hover {
+    text-decoration: underline;
+}
 
 @keyframes updown {
     0% {
