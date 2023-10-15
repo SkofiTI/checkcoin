@@ -60,37 +60,52 @@
         <div class="monitor-crypto">
             <table class="table-currency">
                 <caption id="cryptocurrency">Cryptocurrency</caption>
-                <tr class="table-menu">
-                    <th></th>
+                <tr class="table-currency__menu">
                     <th>Coin</th>
                     <th>Price</th>
                     <th>24h Change</th>
                     <th>Market Cap</th>
                 </tr>
                 <tr>
-                    <td class="table-image"><img src="/img/Bitcoin.png"></td>
-                    <td>Bitcoin</td>
+                    <td>
+                        <div class="table-currency__title">
+                            <img src="/img/Bitcoin.png">
+                            <span class="currency-name">Bitcoin</span>
+                        </div>
+                    </td>
                     <td>42134 $</td>
                     <td class="down-price">-0.81 %</td>
                     <td>119,150,835,874 $</td>
                 </tr>
                 <tr>
-                    <td class="table-image"><img src="/img/Tether.png"></td>
-                    <td>Tether</td>
+                    <td>
+                        <div class="table-currency__title">
+                            <img src="/img/Tether.png">
+                            <span class="currency-name">Tether</span>
+                        </div>
+                    </td>
                     <td>1 $</td>
                     <td class="up-price">0.11 %</td>
                     <td>243,936,194,1 $</td>
                 </tr>
                 <tr>
-                    <td class="table-image"><img src="/img/Ethereum.png"></td>
-                    <td>Ethereum</td>
+                    <td>
+                        <div class="table-currency__title">
+                            <img src="/img/Ethereum.png">
+                            <span class="currency-name">Ethereum</span>
+                        </div>
+                    </td>
                     <td>12134 $</td>
                     <td class="up-price">1.12 %</td>
                     <td>200,893,835,874 $</td>
                 </tr>
                 <tr>
-                    <td class="table-image"><img src="/img/Ripple.png"></td>
-                    <td>Ripple</td>
+                    <td>
+                        <div class="table-currency__title">
+                            <img src="/img/Ripple.png">
+                            <span class="currency-name">Ripple</span>
+                        </div>
+                    </td>
                     <td>12134 $</td>
                     <td class="down-price">-1.18 %</td>
                     <td>62,886,835,874 $</td>
